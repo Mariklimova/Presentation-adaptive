@@ -1,0 +1,64 @@
+.background {
+    background-color: #EBF0FA;
+    margin: 36px 40px;
+    border-radius: 10px;
+   max-width: 1920px; 
+
+}
+
+.content {
+    display: flex;
+    /* justify-content: space-between; */
+
+    .info {
+        max-width: 538px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        /* gap: 18px; */
+        padding: 102px 72px;
+
+        & h1 {
+            font: 500 30px Manrope;
+            color: #1F4284;
+            margin-bottom: 18px;
+
+        }
+
+        & p {
+            font: 400 17px Manrope;
+            color: #727272;
+        }
+
+        .try_btn {
+            border: none;
+            padding: 12px 12px 12px 24px;
+            gap: 60px;
+            border-radius: 60px;
+            background-color: #244C98;
+            margin-top: 36px;
+            display: flex;
+            align-items: center;
+            font: 500 18px Manrope;
+            color: #FFFF;
+        }
+
+        & .arrow {
+            background-image: url('./assets/arrow.svg');
+            width: 44px;
+            height: 44px;
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+    }
+
+    .image {
+        background-image: url('./assets/mechanisms.svg');
+        width: 910px;
+        height: 456px;
+        border-radius: 0 10px 10px 0;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
