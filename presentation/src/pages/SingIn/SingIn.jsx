@@ -1,5 +1,11 @@
+import style from './singin.module.css'
 export default function SingIn() {
     return <>
-        <h1>hi</h1>
+
+        <div className={style.wrapper}>
+           <button>X</button>
+            <h1>Войти в систему</h1>
+        </div>
+
     </>
 }
