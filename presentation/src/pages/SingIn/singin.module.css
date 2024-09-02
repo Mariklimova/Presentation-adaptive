@@ -1,8 +1,125 @@
-
-
-
-.wrapper{
+.wrapper {
     width: 500px;
     background-color: #F0F4FC;
     margin: 10% auto;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 4px;
+
+    .close {
+        background: #FFFFFF;
+        width: 52px;
+        height: 52px;
+        border-radius: 10px;
+        margin-bottom: 4px;
+        margin-left: 400px;
+        border: none;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .cross {
+            background-image: url('./assets/x.jpg');
+            width: 24px;
+            height: 24px;
+            background-size: contain;
+            background-repeat: no-repeat;
+                    
+        }
+    }
+
+    & h1 {
+        font: 500 24px Manrope;
+        color: #323232;
+    }
+
+    & label {
+        font: 400 18px Manrope;
+        display: flex;
+        align-items: center;
+    }
+
+    & h2 {
+        font: 500 20px Manrope;
+        color: #244C98;
+        margin-top: 24px;
+        cursor: pointer;
+    }
+
+    .data_entry {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        margin: 18px 0 24px;
+    
+        & input {
+            padding: 24px;
+            border-radius: 10px;
+            background: #D7E2F6;
+            border: #D7E2F6;
+            font: 500 18px Manrope;
+            
+            &:focus{
+                background-color: #FFFFFF;
+            }
+            &::-webkit-input-placeholder {
+                color: #1F4284;
+            }
+    
+        }
+    
+    }
+    
+    .checkbox {
+        appearance: none;
+        width: 18px;
+        height: 18px;
+        border: 2px solid #323232;
+        margin-right: 14px;
+        cursor: pointer;
+        border-radius: 3px;
+    
+    
+        &:checked::after {
+            content: '✔';
+            color: #244C98;
+            position: relative;
+            bottom: 2px;
+            left: 2px;
+        }
+    }
+    
+    .singin_singup {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        margin-top: 36px;
+    
+        & button {
+            border: 1px solid #244C98;
+            padding: 18px 12px;
+            border-radius: 4px;
+            background-color: #FFFFFF;
+            cursor: pointer;
+            font: 500 18px Manrope;
+            color: #244C98;
+    
+            &:first-child {
+                background-color: #244C98;
+            }
+    
+            & a {
+                color: #FFFFFF;
+            }
+    
+            &:hover{
+                transform: scale(1.05);
+                box-shadow: 5px 5px 10px  #244d98a7;
+            }
+        }
+    }
 }
+

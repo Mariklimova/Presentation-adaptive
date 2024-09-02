@@ -4,7 +4,11 @@
     box-sizing: border-box;
 }
 
-body{
-   /* max-width: 1920px; 
-   margin: auto; */
+a{
+ text-decoration: none;
+}
+
+img{
+    border:none;
+    outline:none;
 }
