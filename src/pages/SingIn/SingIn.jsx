@@ -19,7 +19,6 @@ export default function SingIn() {
             <h2>Восстановить</h2>
 
             <div className={style.singin_singup}>
-                {/* <button><a href ={'./home'} >Войти</a></button> */}
                 <button><Link to= {'/home'}>Войти</Link></button>
                 <button>Зарегистрироваться</button>
             </div>
