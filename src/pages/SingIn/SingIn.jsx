@@ -5,7 +5,9 @@ export default function SingIn() {
     return <>
 
         <div className={style.wrapper}>
-            <button className={style.close}><image className={style.cross}></image></button>
+            <div className={style.wrapper_close_btn}>
+                <button className={style.close}><image className={style.cross}></image></button>
+            </div>
 
             <h1>Войти в систему</h1>
             <div className={style.data_entry}>
@@ -19,7 +21,7 @@ export default function SingIn() {
             <h2>Восстановить</h2>
 
             <div className={style.singin_singup}>
-                <button><Link to= {'/home'}>Войти</Link></button>
+                <button><Link to={'/home'}>Войти</Link></button>
                 <button>Зарегистрироваться</button>
             </div>
 
